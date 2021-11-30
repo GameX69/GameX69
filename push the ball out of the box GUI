@@ -27,14 +27,15 @@ c:Label("Obby Parts",{
 
 b:Button("Telekinesis",function()
     loadstring(game:HttpGet(('https://pastebin.com/raw/kMUUxeGH'),true))()
+	
+    
 end)
 
-b:Button("HighlightUnanchored",function()
-    print("Elym Winning")
-end)
 
 b:Bind("Give Telekinesis Tool",Enum.KeyCode.Z,function() --Default bind
     loadstring(game:HttpGet(('https://pastebin.com/raw/kMUUxeGH'),true))()
+	
+    
 end)
 
 --Auto finish buttons
@@ -52,18 +53,23 @@ end)
 
 c:Button("Finish Obby Part 1",function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-197.44, 6.79221, 36.2636)
-
+	wait(0.2)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.06007, 4, -0.105648)
 end)
 
 c:Button("Finish Obby Part 2",function()
 
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(233.028, 1.2522, 118.44)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.06007, 4, -0.105648)
 
 end)
 
 c:Button("Finish Obby Part 3",function()
     
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-450.182, 18.8248, 182.126)
+wait(0.2)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.06007, 4, -0.105648)
 
 end)
 
@@ -76,7 +82,7 @@ c:Label("Quiz Part",{
 
 c:Button("Copy Answer",function()
 
-print("niv")
+setclipboard("millard fillmore")
 
 end)
 
@@ -90,9 +96,18 @@ c:Label("Spam Balls",{
 c:Button("Finish Spam Balls",function()
     
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-239, 11.9433832, 5.47087087e-09, 1, -9.89936595e-08, 2.70079315e-13, 9.89936595e-08, 1, -2.39284894e-08, -2.6771055e-13, 2.39284894e-08, 1)
-
+wait(0.3)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9.21929, 4, -0.201189)
 end)
 
+d:Button("Infinite Yeild",function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	
+end)
 
+d:Button("Teleport Tool",function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/ZLqS9T8D'),true))()
+	
+end)
 
 d:DestroyGui()
