@@ -1,0 +1,435 @@
+--GDHC TOOL SCRIPT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wait(1)
+local CoreGui = game:GetService("StarterGui") 
+
+CoreGui:SetCore("SendNotification", {
+    Title = "GDHC TOOL",
+    Text = "Hello! We're checking if your IP is whitelisted",
+    Duration = 5, 
+})
+
+wait(5)
+local CoreGui = game:GetService("StarterGui") 
+
+CoreGui:SetCore("SendNotification", {
+    Title = "GDHC TOOL",
+    Text = "IP Whitelisted! Loading Script...",
+    Duration = 5, 
+})
+
+wait(1.8)
+
+
+
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("GDHC TOOL")
+
+local serv = win:Server("Tool", "")
+
+local ourscripts = serv:Channel("GDHC Scripts")
+
+ourscripts:Label("Audio ID Grabbing")
+
+ourscripts:Button("Edge's Audio Logger", function()
+print("Executing Edge's Audio Logger...")
+loadstring(game:HttpGet('https://pastebin.com/raw/mKPRwVSW'))();
+DiscordLib:Notification("Edge's ID Logger", "Edge's Audio Logger was Loaded!", "Okay!")
+print("Edge's Audio Logger was Loaded!")
+
+end)
+
+ourscripts:Seperator()
+
+ourscripts:Label("Chat Scripts")
+
+
+local other = serv:Channel("Other scripts")
+
+other:Label("Swagmode Stuff")
+
+other:Button("Swagmode", function()
+print("Executing Swagmode..")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
+DiscordLib:Notification("Swagmode", "Swagmode Loaded! (WARNING!) SWAGMODE HAS PREMIUM THAT MEANS PREMIUM USERS CAN USE WEIRD COMMAND AGAISNT YOU!", "Okay I understand!")
+print("Swagmode Loaded!")
+
+end)
+
+other:Button("Swagmode Crash", function()
+print("Executing Swagmode crash..")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+wait(0.1)
+DiscordLib:Notification("Swagmode Crash", "Swag Crash Loaded (Warning) 1 Crash method requires Good Pc, 2 Crash method requires 100k-200k Dhc and ppl can kill you while Crashing", "Okay I understand!")
+print("Swagmode Crash Loaded")
+end)
+
+other:Seperator()
+
+
+other:Label("Faded Stuff")
+
+other:Button("Faded GUI", function()
+print("Executing Faded...")
+_G.Toggles = "V"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+DiscordLib:Notification("Faded GUI", "Faded was Loaded, GUIbind = V (WARNING) This script has Mod perms / Premium and ppl with that can use weird Command against you", "Okay I understand!")
+print("Faded GUI was Loaded!")
+end)
+
+other:Button("Faded Money Stuff", function()
+print("Executing Faded Money Stuff..")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded-Money-Stuff/main/YesEpic", true))()
+DiscordLib:Notification("Faded Money Stuff", "Faded Money Stuff was Loaded!", "Okay!")
+print("Faded Money Stuff was Loaded!")
+
+end)
+
+other:Button("Faded Crash", function()
+print("Executing Faded Crash")
+DiscordLib:Notification("Faded Crash", "It looks like Faded's crash method was Patched...", ":c")
+print("Error: Faded crash didn't Load..")
+
+end)
+
+
+other:Seperator()
+
+other:Label("Destiny Stuff")
+
+other:Button("Destiny", function()
+print("Executing Destiny...")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
+DiscordLib:Notification("Destiny", "Destiny was Loaded (WARNING) Destiny also has Premium but not alot of ppl has it!", "Okay I understand!")
+print("Destiny was Loaded!")
+
+end)
+
+other:Button("Copy Destiny Group", function()
+print("Copying Destiny Group...")
+
+setclipboard("https://www.roblox.com/groups/7658734/true")
+
+wait(0.2)
+
+DiscordLib:Notification("Destiny Group", "Destiny Group Link was Copied", "Okay I understand!")
+
+print("Destiny Group Link was Copied")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Clipboard Change!",
+    Text = "group_LINK was Copied to your Clipboard!",
+    Duration = 3.5, 
+})
+
+end)
+
+local tps = serv:Channel("Teleports")
+
+
+local Ltps = serv:Channel("Legit Teleports")
+
+Ltps:Label("Gun Stores")
+
+Ltps:Button("Uphill gunz", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(496.045, 48.003, -594.2)
+
+end)
+
+Ltps:Button("Downhill gunz", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-377.531, 12.7478, -689.086)
+
+end)
+
+
+
+Ltps:Label("Bank / At Bank")
+
+Ltps:Button("Bank Houses", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-321.505, 21.753, -448.8)
+
+end)
+
+Ltps:Button("Bank Houses 2", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-454.455, 21.753, -484.95)
+
+end)
+
+Ltps:Button("At Jewerly", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-613.372, 21.748, -325.45)
+
+end)
+
+Ltps:Button("Hoodkicks", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-190.105, 21.753, -381.75)
+
+end)
+
+Ltps:Button("Flowers and Fire station", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-132.4, 21.748, -231.05)
+
+end)
+
+Ltps:Seperator()
+
+Ltps:Seperator()
+
+Ltps:Label("Downhill")
+
+Ltps:Button("At School", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-404.5, 21.748, 88.1)
+
+end)
+
+Ltps:Button("At School 2", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-735.575, 21.748, 142.325)
+
+end)
+
+Ltps:Button("At Uphill Entrance / Houses", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(8.14476, 21.753, -546.75)
+
+end)
+
+Ltps:Button("Da Boxing Club", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-208.077, 21.753, -1132.4)
+
+end)
+
+Ltps:Button("At Playground", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-142.543, 21.753, -823.192)
+
+end)
+
+
+
+Ltps:Seperator()
+
+Ltps:Label("Uphill")
+
+Ltps:Button("At Apartment", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(418.995, 48.003, -804)
+
+end)
+
+
+
+Ltps:Button("At Restaurant", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(353.995, 48.003, -592.75)
+
+end)
+
+Ltps:Button("Park", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(451.745, 48.003, -399.25)
+
+end)
+
+
+Ltps:Button("Uphill Entrance", function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(211.795, 48.003, -595)
+
+end)
+
+
+
+Ltps:Seperator()
+
+
+
+
+local extra = serv:Channel("Extras")
+
+extra:Button("Rejoin", function()
+print("Rejoining!")
+wait(0.1)
+DiscordLib:Notification("Notification", "Attempting to Rejoin...", "Uhhh...")
+
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+
+end)
+
+
+extra:Button("Server Hop", function()
+
+wait(0.1)
+DiscordLib:Notification("Notification", "Attempting to Server Hop...", "Uhhh...")
+game:GetService("TeleportService"):Teleport(gameid, game:GetService("Players").LocalPlayer)
+
+end)
+
+extra:Button("Copy GDHC Discord", function()
+
+setclipboard(".gg/fTtEeJ2nhX")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Clipboard Change!",
+    Text = ".gg/fTtEeJ2nhX was Copied to your Clipboard!",
+    Duration = 3.5, 
+})
+
+end)
+
+extra:Button("Type GDHC Discord", function()
+
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("< gg.fTtEeJ2nhX >","All")
+
+end)
+
+
+extra:Button("Copy GDHC Private-Server", function()
+
+setclipboard("https://www.roblox.com/games/2788229376?privateServerLinkCode=68604262263793243933643198045913")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Clipboard Change!",
+    Text = "server_LINK was Copied to your Clipboard!",
+    Duration = 3.5, 
+})
+
+end)
+
+extra:Button("Copy New GDHC Group ID", function()
+
+setclipboard("12896482")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Clipboard Change!",
+    Text = "12896482 was Copied to your Clipboard!",
+    Duration = 3.5, 
+})
+
+end)
+
+extra:Button("Copy Old GDHC Group ID", function()
+
+setclipboard("7044383")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "Clipboard Change!",
+    Text = "7044383 was Copied to your Clipboard!",
+    Duration = 3.5, 
+})
+
+end)
+
+local btns = serv:Channel("Test Buttons")
+
+btns:Label("Test Buttons")
+
+
+
+
+
+btns:Button("Print Test!", function()
+print("Test!")
+wait(0.1)
+DiscordLib:Notification("Notification", "Printed!", "Okay!")
+end)
+
+btns:Button("Say Hello!", function()
+wait(0.1)
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Hello!","All")
+wait(0.1)
+DiscordLib:Notification("Notification", "You typed Hello!", "Okay!")
+end)
+
+btns:Button("Rejoin", function()
+print("Rejoining!")
+wait(0.1)
+DiscordLib:Notification("Notification", "Attempting to Rejoin...", "Uhhh...")
+
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+
+end)
+
+
+
+
+DiscordLib:Notification("Welcome", "Hello, GDHC Admin / Seller!", "Yes sirrr!")
+
+wait(1)
+local CoreGui = game:GetService("StarterGui") 
+
+CoreGui:SetCore("SendNotification", {
+    Title = "GDHC TOOL Loaded!",
+    Text = "Hello, GDHC Admin / Seller!",
+    Duration = 10, 
+})
+
+wait(2.5)
+
+local CoreGui = game:GetService("StarterGui") 
+
+CoreGui:SetCore("SendNotification", {
+    Title = "UPDATE LOG!",
+    Text = "+ Legit Teleport + Added something in Extras + Teleports coming soon!",
+    Duration = 10, 
+})
