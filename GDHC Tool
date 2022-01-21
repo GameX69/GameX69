@@ -39,6 +39,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 wait(1)
 local CoreGui = game:GetService("StarterGui") 
 
