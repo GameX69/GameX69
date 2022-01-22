@@ -39,31 +39,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 wait(1)
 local CoreGui = game:GetService("StarterGui") 
 
 CoreGui:SetCore("SendNotification", {
     Title = "GDHC TOOL",
-    Text = "Hello! We're checking if your IP is whitelisted",
+    Text = "Hello! We're checking if your Roblox ID is whitelisted",
     Duration = 5, 
 })
 
@@ -72,11 +53,12 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "GDHC TOOL",
-    Text = "IP Whitelisted! Loading Script...",
+    Text = "ID Whitelisted! Loading the Script!",
     Duration = 5, 
 })
 
-wait(1.8)
+
+wait(1.7)
 
 
 
@@ -102,6 +84,30 @@ ourscripts:Seperator()
 
 ourscripts:Label("Chat Scripts")
 
+
+ourscripts:Seperator()
+
+
+
+ourscripts:Label("Other Seller Tools")
+
+
+
+ourscripts:Button("Devenire's DHC Script", function()
+print("Executing DV's DHC Script..")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DeVenire/cash/main/CashToolBETA.lua'))();
+DiscordLib:Notification("Devenire's Tool", "Devenire's DHC Script was Loaded!", "Okay!")
+print("DV's DHC Script was Loaded!")
+
+end)
+
+ourscripts:Button("Raycodex's DHC Script", function()
+print("Executing RC's DHC Script..")
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Cash%20Drop"), true))()
+DiscordLib:Notification("Raycodex's Tool", "Raycodex's DHC Script was Loaded!", "Okay!")
+print("RC's DHC Script was Loaded!")
+
+end)
 
 local other = serv:Channel("Other scripts")
 
@@ -393,6 +399,12 @@ CoreGui:SetCore("SendNotification", {
 
 end)
 
+
+extra:Button("Auto Buy Armor", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/sources/main/AutoBuyArmor", true))()
+DiscordLib:Notification("Auto Buy Armor", "Auto Buy Armor was Loaded, Type /e stop for it to Stop buying Armor!", "Okay!")
+
+
 local btns = serv:Channel("Test Buttons")
 
 btns:Label("Test Buttons")
@@ -449,6 +461,8 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "UPDATE LOG!",
-    Text = "+ Legit Teleport + Added something in Extras + Teleports coming soon!",
+    Text = "+Added something in GDHC Scripts + Added something in Extras + Teleports coming soon!",
     Duration = 10, 
 })
+
+end)
